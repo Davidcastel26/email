@@ -16,6 +16,7 @@
 
       html {
         box-sizing: border-box;
+        font-family: "Noto Sans";
       }
 
       *,
@@ -48,7 +49,7 @@
         /* top: 40px; */
         position: relative;
         width: 100%;
-        height: 250px;
+        height: 50px;
         /* Inside auto layout */
 
         /* flex: none; */
@@ -84,7 +85,7 @@
         /* top: -4pxs; */
 
         width: 80%;
-        font-family: "Noto Sans";
+
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -96,8 +97,8 @@
       .logo img {
         width: 100%;
         display: block;
-        height: 300px;
-        object-fit: cover;
+        height: 100px;
+        object-fit: contain;
       }
 
       /* Heroes */
@@ -107,11 +108,8 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        position: static;
-        width: 544px;
+        width: 100%;
         height: 636px;
-        left: 28px;
-        top: 120px;
 
         /* Inside auto layout */
         border: 5px;
@@ -119,7 +117,7 @@
         flex: none;
         order: 1;
         flex-grow: 0;
-        margin-top: 3rem;
+        margin: 3rem 0 4rem;
       }
 
       /* img section inside container */
@@ -212,7 +210,7 @@
         order: 2;
         align-self: stretch;
         flex-grow: 0;
-        margin: 24px 0px;
+        margin: 10px 0px;
       }
 
       .btn__ {
@@ -241,24 +239,49 @@
         flex: none;
         order: 3;
         flex-grow: 0;
-        margin: 24px 0px;
+        margin: 10px 0px;
       }
 
-      .footer_container {
-        /* Footer */
+      .footer {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        position: static;
-        width: 560px;
-        height: 255px;
-        left: 20px;
-        top: 1998px;
+      .footer-main-text {
+        font-size: 20px;
+        margin: 5px 0 10px;
+      }
 
-        /* Inside auto layout */
+      .footer-img-container,
+      .footer-text-container {
+        display: flex;
+        gap: 20px;
+      }
+      .footer-img-container {
+        gap: 4rem;
+      }
 
-        flex: none;
-        order: 7;
-        flex-grow: 0;
-        margin: 40px 0px;
+      .footer-img-container img {
+        margin: 20px 0;
+        width: 40px;
+        height: 40px;
+      }
+
+      .footer-text-container p {
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .footer-text-container {
+        flex-direction: column;
+      }
+
+      .footer-logo {
+        font-size: 25px;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -268,7 +291,7 @@
       <header class="div__logo">
         <div class="logo">
           <!--   <div class="logo__box_up"></div> -->
-          <img src="pics/TechC.gif" alt="logo" />
+          <img src="pics/logo1.png" alt="logo" />
         </div>
         <!-- <div class="logo__box"></div> -->
       </header>
@@ -290,7 +313,25 @@
         </div>
         <button class="btn__">Join Now!</button>
       </container>
-      <footer class="footer_container"></footer>
+      <hr />
+      <footer class="footer">
+        <p class="footer-main-text">TEXTO</p>
+        <p class="footer-main-text">TEXTO</p>
+        <div class="footer-img-container">
+          <img src="pics/twitter.png" alt="twiter" />
+          <img src="pics/instagram.png" alt="instagram" />
+          <img src="pics/youtube.png" alt="youtube" />
+          <img src="pics/linkedin.png" alt="linkedin" />
+        </div>
+        <div class="footer-text-container">
+          <p>Text</p>
+          <p>Text</p>
+          <p>Text</p>
+        </div>
+        <div>
+          <p class="footer-logo">LOGO</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
