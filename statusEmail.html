@@ -14,6 +14,15 @@
     <style>
       /* body */
 
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: inherit;
+      }
       body {
         /* Auto layout  */
 
@@ -21,7 +30,7 @@
         flex-direction: column;
         align-items: center;
         padding: 40px 0px 0px;
-
+        margin: 0 auto;
         position: relative;
         width: 600px;
         height: 2253px;
@@ -38,8 +47,8 @@
         /* left: 238.5px; */
         /* top: 40px; */
         position: relative;
-        width: 2em;
-
+        width: 100%;
+        height: 250px;
         /* Inside auto layout */
 
         /* flex: none; */
@@ -47,13 +56,16 @@
         /* flex-grow: 0; */
         /* margin: 40px 0px; */
       }
+
       .logo__box {
-        background-color: #ad8383;
-        padding: 3rem;
+        /* background-color: #ad8383; */
+        background-color: #ffffff;
         position: absolute;
-        width: 444px;
-        height: 5px;
+        height: 50px;
+        width: 80%;
+        transform: translateX(12.5%);
         bottom: 0;
+        z-index: 100;
       }
 
       .logo__box_up {
@@ -66,24 +78,26 @@
       /* div logo  */
       .logo {
         /* position: absolute; */
-        margin-left: 2.5rem;
-        width: 104px;
+        margin: 0 auto;
         /* height: 49px; */
         /* left: 10px; */
         /* top: -4pxs; */
 
+        width: 80%;
         font-family: "Noto Sans";
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
         line-height: 49px;
         /* identical to box height */
-
-        text-align: center;
-
         color: #000000;
+        height: 400px;
       }
       .logo img {
+        width: 100%;
+        display: block;
+        height: 300px;
+        object-fit: cover;
       }
 
       /* Heroes */
@@ -93,7 +107,6 @@
         flex-direction: column;
         align-items: center;
         padding: 20px;
-
         position: static;
         width: 544px;
         height: 636px;
@@ -106,7 +119,7 @@
         flex: none;
         order: 1;
         flex-grow: 0;
-        margin: 40px 0px;
+        margin-top: 3rem;
       }
 
       /* img section inside container */
@@ -254,10 +267,10 @@
     <div>
       <header class="div__logo">
         <div class="logo">
-          <div class="logo__box_up"></div>
+          <!--   <div class="logo__box_up"></div> -->
           <img src="pics/TechC.gif" alt="logo" />
         </div>
-        <div class="logo__box"></div>
+        <!-- <div class="logo__box"></div> -->
       </header>
       <container class="mail">
         <!-- <div> -->
