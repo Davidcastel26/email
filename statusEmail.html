@@ -1,296 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Status Email</title>
+    <style>
+      /* body */
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Raleway:wght@300;400;700&display=swap"
-    rel="stylesheet">
-  <title>Status Email</title>
-  <style>
-    /* body */
+      body {
+        /* Auto layout  */
 
-    body {
-      /* Auto layout  */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0px 0px;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 0px 0px;
+        position: relative;
+        width: 600px;
+        height: 2253px;
 
-      position: relative;
-      width: 600px;
-      height: 2253px;
+        background: #ffffff;
+      }
 
-      background: #FFFFFF;
-    }
+      /* Logo  header*/
 
-    /* Logo  header*/
+      .div__logo {
+        /* position: static; */
+        /* width: 123px; */
+        /* height: 40px; */
+        /* left: 238.5px; */
+        /* top: 40px; */
+        position: relative;
+        width: 2em;
 
-    .div__logo {
-      /* position: static; */
-      /* width: 123px; */
-      /* height: 40px; */
-      /* left: 238.5px; */
-      /* top: 40px; */
-      width: 2em;
+        /* Inside auto layout */
 
-      /* Inside auto layout */
+        /* flex: none; */
+        /* order: 0; */
+        /* flex-grow: 0; */
+        /* margin: 40px 0px; */
+      }
+      .logo__box {
+        background-color: #ad8383;
+        padding: 3rem;
+        position: absolute;
+        width: 444px;
+        height: 5px;
+        bottom: 0;
+      }
 
-      /* flex: none; */
-      /* order: 0; */
-      /* flex-grow: 0; */
-      /* margin: 40px 0px; */
-    }
-    .logo__box{
-      background-color: #ad8383;
-      padding: 3rem;
-      position: absolute;
-      width: 500px;
-      height: 5px;
-    }
-    .logo__box_up{
-      background-color: #ffffff;
-      padding: 2rem;
-      position: absolute;
-      width: 500px;
-      height: 5px;
-    }
-    /* div logo  */
-    .logo {
-      /* position: absolute; */
-      margin-left: 2.5rem;
-      width: 104px;
-      /* height: 49px; */
-      /* left: 10px; */
-      /* top: -4pxs; */
+      .logo__box_up {
+        background-color: #ffffff;
+        padding: 2rem;
+        position: absolute;
+        width: 500px;
+        height: 5px;
+      }
+      /* div logo  */
+      .logo {
+        /* position: absolute; */
+        margin-left: 2.5rem;
+        width: 104px;
+        /* height: 49px; */
+        /* left: 10px; */
+        /* top: -4pxs; */
 
-      font-family: 'Noto Sans';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 49px;
-      /* identical to box height */
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        /* identical to box height */
 
-      text-align: center;
+        text-align: center;
 
-      color: #000000;
-    }
-    .logo img{
+        color: #000000;
+      }
+      .logo img {
+      }
 
-    }
-
-    /* Heroes */
-    /* Auto layout */
-    .mail {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-
-      position: static;
-      width: 544px;
-      height: 636px;
-      left: 28px;
-      top: 120px;
-
-
-      /* Inside auto layout */
-      border: 5px;
-      border-color: rgba(182, 65, 65, 0.725);
-      flex: none;
-      order: 1;
-      flex-grow: 0;
-      margin: 40px 0px;
-    }
-
-
-
-
-    /* img section inside container */
-    .img_container {
-      position: absolute;
-      width: 504px;
-      height: 360px;
-      left: 0px;
-      top: 0px;
-
-      background: url(.png);
-    }
-
-    .img {
-      /* heroContainer */
-
-
-      position: static;
-      width: 504px;
-      height: 361px;
-      left: 20px;
-      top: 93px;
-
-      background: #FFF0F0;
-      border-radius: 20px;
-
-      /* Inside auto layout */
-
-      flex: none;
-      order: 1;
-      align-self: stretch;
-      flex-grow: 1;
-      margin: 24px 0px;
-    }
-
-    /* Title */
-    .title {
-
-      position: static;
-      width: 504px;
-      left: calc(50% - 504px/2);
-      top: 3.14%;
-      bottom: 89.15%;
-
-      /* Big Title */
-
-      font-family: 'Noto Sans', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 49px;
-      /* identical to box height */
-
-      text-align: center;
-
-      color: #000000;
-
-
-      /* Inside auto layout */
-
-      flex: none;
-      order: 0;
-      align-self: stretch;
-      flex-grow: 0;
-      margin: 24px 0px;
-    }
-
-    .text {
-      /* Text */
-
-
-      position: static;
-      width: 504px;
-      left: calc(50% - 504px/2);
-      top: 75.16%;
-      bottom: 13.52%;
-
-      /* Texts */
-
-      font-family: 'Noto Sans';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 19px;
-      line-height: 24px;
-      /* or 126% */
-
-      text-align: center;
-
-      color: #000000;
-
-      /* Inside auto layout */
-
-      flex: none;
-      order: 2;
-      align-self: stretch;
-      flex-grow: 0;
-      margin: 24px 0px;
-    }
-
-    .btn__ {
-      /* Button */
-
-
+      /* Heroes */
       /* Auto layout */
+      .mail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
 
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 13px;
+        position: static;
+        width: 544px;
+        height: 636px;
+        left: 28px;
+        top: 120px;
 
-      position: static;
-      width: 97px;
-      height: 42px;
-      left: 223.5px;
-      top: 574px;
+        /* Inside auto layout */
+        border: 5px;
+        border-color: rgba(182, 65, 65, 0.725);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 40px 0px;
+      }
 
-      background: #FFFFFF;
-      border: 1px solid #000000;
-      box-sizing: border-box;
-      border-radius: 4px;
+      /* img section inside container */
+      .img_container {
+        position: absolute;
+        width: 504px;
+        height: 360px;
+        left: 0px;
+        top: 0px;
 
-      /* Inside auto layout */
+        background: url(.png);
+      }
 
-      flex: none;
-      order: 3;
-      flex-grow: 0;
-      margin: 24px 0px;
-    }
+      .img {
+        /* heroContainer */
 
-    .footer_container {
-      /* Footer */
+        position: static;
+        width: 504px;
+        height: 361px;
+        left: 20px;
+        top: 93px;
 
+        background: #fff0f0;
+        border-radius: 20px;
 
-      position: static;
-      width: 560px;
-      height: 255px;
-      left: 20px;
-      top: 1998px;
+        /* Inside auto layout */
 
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 1;
+        margin: 24px 0px;
+      }
 
-      /* Inside auto layout */
+      /* Title */
+      .title {
+        position: static;
+        width: 504px;
+        left: calc(50% - 504px / 2);
+        top: 3.14%;
+        bottom: 89.15%;
 
-      flex: none;
-      order: 7;
-      flex-grow: 0;
-      margin: 40px 0px;
-    }
-  </style>
-</head>
+        /* Big Title */
 
-<body>
- <div>
-  <header class="div__logo">
-    <div class="logo">
-      <div class="logo__box_up"></div>
-      <img src="../../../../client/src/assets/Imgs/TechC.gif" alt="">
+        font-family: "Noto Sans", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #000000;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 24px 0px;
+      }
+
+      .text {
+        /* Text */
+
+        position: static;
+        width: 504px;
+        left: calc(50% - 504px / 2);
+        top: 75.16%;
+        bottom: 13.52%;
+
+        /* Texts */
+
+        font-family: "Noto Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px;
+        /* or 126% */
+
+        text-align: center;
+
+        color: #000000;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 2;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 24px 0px;
+      }
+
+      .btn__ {
+        /* Button */
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 13px;
+
+        position: static;
+        width: 97px;
+        height: 42px;
+        left: 223.5px;
+        top: 574px;
+
+        background: #ffffff;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 3;
+        flex-grow: 0;
+        margin: 24px 0px;
+      }
+
+      .footer_container {
+        /* Footer */
+
+        position: static;
+        width: 560px;
+        height: 255px;
+        left: 20px;
+        top: 1998px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 7;
+        flex-grow: 0;
+        margin: 40px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <header class="div__logo">
+        <div class="logo">
+          <div class="logo__box_up"></div>
+          <img src="pics/TechC.gif" alt="logo" />
+        </div>
+        <div class="logo__box"></div>
+      </header>
+      <container class="mail">
+        <!-- <div> -->
+        <h1 class="title">Confirmation Email</h1>
+        <!-- </div> -->
+        <div class="">
+          <img
+            class="img"
+            src="./pics//body.jpeg"
+            alt="welcome photo"
+            height="50%"
+          />
+        </div>
+        <div class="text">
+          Boost your emails with Blush! Create dope emails easy and fast!
+          Install the Blush plugin to customize all the illustrations!
+        </div>
+        <button class="btn__">Join Now!</button>
+      </container>
+      <footer class="footer_container"></footer>
     </div>
-    <div class="logo__box"></div>
-  </header>
-  <container class="mail">
-    <!-- <div> -->
-      <h1 class="title">
-        Confirmation Email
-      </h1>
-    <!-- </div> -->
-    <div class="">
-      <img class="img"
-        src="./pics//body.jpeg"
-        alt="welcome photo" height="50%">
-    </div>
-    <div class="text">
-      Boost your emails with Blush! Create dope emails easy and fast! Install the Blush plugin to customize all the
-      illustrations!
-    </div>
-    <button class="btn__">
-      Join Now!
-    </button>
-  </container>
-  <footer class="footer_container">
-
-  </footer>
- </div>
-</body>
-
+  </body>
 </html>
