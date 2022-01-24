@@ -117,7 +117,7 @@
         flex: none;
         order: 1;
         flex-grow: 0;
-        margin: 3rem 0 4rem;
+        margin: 0 0 1rem;
       }
 
       /* img section inside container */
@@ -218,12 +218,8 @@
 
         /* Auto layout */
 
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
         padding: 13px;
 
-        position: static;
         width: 97px;
         height: 42px;
         left: 223.5px;
@@ -236,10 +232,14 @@
 
         /* Inside auto layout */
 
-        flex: none;
-        order: 3;
-        flex-grow: 0;
         margin: 10px 0px;
+        cursor: pointer;
+        transition: background-color 0.5s ease-in, color 0.5s ease-in;
+      }
+
+      .btn__:hover {
+        background-color: #000;
+        color: #fff;
       }
 
       .footer {
@@ -283,6 +283,26 @@
         font-size: 25px;
         font-weight: bold;
       }
+
+      .status {
+        margin: 2rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+      }
+
+      .status img {
+        width: 50%;
+      }
+
+      .status-article * {
+        margin: 0.5rem 0;
+      }
+      .main-title {
+        margin-top: 7rem;
+        text-align: center;
+      }
     </style>
   </head>
 
@@ -295,9 +315,23 @@
         </div>
         <!-- <div class="logo__box"></div> -->
       </header>
+      <h1 class="main-title">Order</h1>
+      <div class="status">
+        <img src="pics/statusPic.svg" alt="status" />
+        <article class="status-article">
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            nisi animi distinctio quibusdam. Repudiandae dolore minima porro,
+            numquam, fuga veritatis, voluptas tempore nisi tenetur aliquid
+            necessitatibus explicabo cumque ea corporis!
+          </p>
+          <button class="btn__">Try it now</button>
+        </article>
+      </div>
       <container class="mail">
         <!-- <div> -->
-        <h1 class="title">Confirmation Email</h1>
+
         <!-- </div> -->
         <div class="">
           <img
